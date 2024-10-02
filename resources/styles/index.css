@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+a {
+  text-decoration: none;
+  color: #1c1e53;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #5e3bee !important;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  /* border: red dashed 2px; */
+  background-color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  padding: 0px 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo a {
+  font-family: "Unbounded";
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav .logo, 
+footer .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo a, 
+footer .logo a {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+nav ul, footer .top ul {
+  display: flex;
+  gap: 40px;
+}
+
+nav button {
+  color: #1c1e53;
+  background-color: transparent;
+  padding: 12px 16px;
+  border-radius: 5px;
+  border: 1px solid #1c1e53;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #5e3bee;
+    border-color: #5e3bee;
+    color: #FFFFFF;
+}
+
+nav button#menuButton {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
+}
+
+.main {
+    background-color: #deebee;
+    padding: 90px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.main .left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.main .left h3 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 46px;
+}
+
+.main .left p {
+    color: #1c1e53;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.main .left button {
+  width: 200px;
+    margin-top: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #5e3bee;
+    padding: 14px 24px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .left button i {
+  font-size: 20px;
+  margin-right: 10px;
+}
